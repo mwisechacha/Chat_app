@@ -2,33 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | [Chat app]</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor| [Chat App]</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" />
   </head>
   <body>
-    Samuel Green Available to Walk That sounds great. I’d be happy with that.
-    Could you send over some pictures of your dog, please? Here are a few
-    pictures. She’s a happy girl! Can you make it? She looks so happy! The time
-    we discussed works. How long shall I take her out for? 30 minute walk $29 1
-    hour walk $49 Type a message… Simple booking Stay in touch with our dog
-    walkers through the chat interface. This makes it easy to discuss
-    arrangements and make bookings. Once the walk has been completed you can
-    rate your walker and book again all through the chat.
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Angela Susan Chacha</a>.
+    <div>
+      <h1>Simple Booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and easy booking. once your
+        walking has been completed you can rate your walker and book again
+        through the chat
+      </p>
     </div>
+
+    <div id="source">
+      <div id="source_img">
+        <img src="images/avatar.jpg" alt="Samuel's image" />
+      </div>
+
+      <div id="source_name">
+        <h2>Samuel Green</h2>
+        <p>Available to walk</p>
+      </div>
+    </div>
+
+    <div class="sender">
+      <div>
+        <p>That sounds great. I'd be happy with that.</p>
+      </div>
+
+      <div>
+        <p>Could you send over some pictures of your dog, please?</p>
+      </div>
+    </div>
+
+    <div class="receiver">
+      <div>
+        <img src="images/dog-image-1.jpg" alt="Image 1" />
+        <img src="images/dog-image-2.jpg" alt="Image 1" />
+        <img src="images/dog-image-3.jpg" alt="Image 1" />
+      </div>
+
+      <div>
+        <p>Here are a few pictures. Shes a happy girl!</p>
+      </div>
+
+      <div>
+        <p>Can you make it?</p>
+      </div>
+    </div>
+
+    <div class="sender">
+      <div>
+        <p>
+          She looks so happy! The time we discussed works. How long shall I take
+          her out for?
+        </p>
+      </div>
+
+      <div>
+        <ul>
+          <li>30 minute walk</li>
+          <p>$29</p>
+          <li>1 hour walk</li>
+          <p>$49</p>
+        </ul>
+      </div>
+    </div>
+
+    <input type="type a message" />
   </body>
 </html>
