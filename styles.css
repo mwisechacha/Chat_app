@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+body {
+}
+
+#whole-body {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 7rem;
+}
+
+#title {
+}
+
+#title h1 {
+  color: hsl(271, 36%, 24%);
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#title p {
+  max-width: 42ch;
+  color: hsl(270, 7%, 64%);
+  font-family: "Rubik";
+  font-size: small;
+  line-height: 1.15rem;
+  font-weight: 400;
+}
+
+#source {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#source-image {
+  align-items: center;
+}
+
+#image-1 {
+  align-items: center;
+  max-width: 20%;
+  border-radius: 25px;
+}
+
+#source-name {
+}
