@@ -8,6 +8,7 @@ body {
 #whole-body {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
   gap: 7rem;
 }
@@ -18,7 +19,7 @@ body {
 #title h1 {
   color: hsl(271, 36%, 24%);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.9rem;
 }
 
 #title p {
@@ -30,8 +31,10 @@ body {
 }
 
 #image-1 {
-  max-width: 6%;
+  max-width: 9%;
   border-radius: 100vmax;
+  border-style: solid;
+  border-color: hsl(0, 0%, 100%);
 }
 
 #source {
@@ -93,7 +96,7 @@ body {
   max-width: 23ch;
   font-size: 0.85rem;
   line-height: 1.3rem;
-  background-color: hsl(0, 51%, 59%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 17px;
   padding-left: 15px;
   padding-right: 15px;
@@ -104,12 +107,80 @@ body {
 }
 
 .dog-image {
-  max-width: 10%;
+  max-width: 20%;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 #main-image-div {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 10px;
+}
+
+#walk-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.empty-div {
+  border-style: solid;
+  border-color: hsl(289, 100%, 72%);
+  align-self: center;
+  border-radius: 100vw;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+#style-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: linear-gradient(
+    0.25turn,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+
+  gap: 3rem;
+  border-radius: 15px;
+  padding: 3px 20px 3px 10px;
+  margin-top: 10px;
+}
+
+.select-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}
+
+#style-time p {
+  font-weight: 400;
+  color: hsl(289, 100%, 72%);
+  line-height: 0.85rem;
+  font-size: small;
+  align-self: flex-start;
+}
+
+#style-time h1 {
+  align-self: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+
+#type-section {
+  border-radius: 30px;
+  padding: 17px 100px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+#message-body {
+  max-width: 30%;
+  padding: 1rem;
+  background-color: hsl(270, 59%, 60%);
 }
