@@ -12,13 +12,20 @@
   gap: 7rem;
 }
 body {
-  /* background-color: ; */
+  /* background-image: linear-gradient(
+    0.25turn,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  background-position: left -2rem top -2rem;
+  background-size: 30%;
+  background-repeat: no-repeat; */
 }
 
 #title h1 {
   color: hsl(271, 36%, 24%);
-  font-weight: 700;
-  font-size: 1.9rem;
+  font-weight: 500;
+  font-size: 1.85rem;
 }
 
 #title p {
@@ -30,8 +37,9 @@ body {
 }
 
 #image-1 {
-  max-width: 9%;
+  max-width: 12%;
   border-radius: 100vmax;
+  border-width: 1.5px;
   border-style: solid;
   border-color: hsl(0, 0%, 100%);
 }
@@ -53,8 +61,9 @@ body {
 }
 
 #first {
-  /* position: absolute; */
+  position: absolute;
   align-self: center;
+  margin-top: 0;
   margin-left: 0;
   border: 0;
   border-bottom-left-radius: 20px;
@@ -69,8 +78,9 @@ body {
   gap: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  margin: none;
 }
 
 #source-name {
@@ -95,44 +105,53 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .message-1 p {
   color: hsl(276, 55%, 52%);
   font-weight: 400;
   max-width: 22ch;
-  font-size: 0.85rem;
-  line-height: 1.3rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
   background-color: hsl(276, 37%, 92%);
   border-radius: 17px;
-  padding: 5px 12px 5px 12px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 8px 5px 8px;
   margin-top: 5px;
   margin-bottom: 8px;
+  margin: 0;
 }
 
 .receiver {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0px;
+  gap: 0.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.message-2 {
+.message-2 p {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   color: hsl(271, 15%, 43%);
   font-weight: 400;
   max-width: 23ch;
-  font-size: 0.85rem;
-  line-height: 1.3rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 17px;
-  padding: 5px 15px 5px 15px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 10px 5px 10px;
   margin-top: 9px;
   margin-bottom: 9px;
+  margin: 0;
 }
 
 .dog-image {
   max-width: 20%;
   border-radius: 15px;
-  margin-top: 20px;
 }
 
 #main-image-div {
@@ -169,8 +188,10 @@ body {
 
   gap: 3rem;
   border-radius: 15px;
+  border-bottom-left-radius: 5px;
   padding: 3px 20px 3px 10px;
   margin-top: 10px;
+  margin: 0;
 }
 
 .select-button {
@@ -198,17 +219,21 @@ body {
 #type-section {
   border-radius: 30px;
   border: 0;
-  padding: 17px 75px;
+  padding: 17px 50px;
   align-self: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #message-body {
-  width: 20rem;
-  height: 45rem;
+  align-self: center;
+  width: 18rem;
+  height: 38rem;
   border-radius: 35px;
   border: 0.9rem solid hsl(0, 0%, 100%);
   background-color: hsl(270, 20%, 96%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  /* transform: scale(0.5); */
 }
 
 #inner-message-body {
