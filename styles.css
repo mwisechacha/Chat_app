@@ -9,31 +9,34 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
-}
-body {
-  /* background-image: linear-gradient(
-    0.25turn,
-    hsl(264, 100%, 61%),
-    hsl(293, 100%, 63%)
-  );
-  background-position: left -2rem top -2rem;
-  background-size: 30%;
-  background-repeat: no-repeat; */
+  gap: 3rem;
 }
 
-#title h1 {
+.title h1 {
   color: hsl(271, 36%, 24%);
   font-weight: 500;
   font-size: 1.85rem;
 }
 
-#title p {
-  max-width: 42ch;
+.title p {
+  max-width: 45ch;
   color: hsl(270, 7%, 64%);
   font-size: small;
   line-height: 1.15rem;
   font-weight: 400;
+}
+
+#back-icon {
+  fill: hsl(0, 0%, 100%);
+  width: 0.9rem;
+  transform: scale(0.5);
+}
+
+#more-icon {
+  align-self: baseline;
+  fill: hsl(0, 0%, 100%);
+  size: 0.85rem;
+  transform: scale(0.5);
 }
 
 #image-1 {
@@ -63,6 +66,7 @@ body {
 #first {
   position: absolute;
   align-self: center;
+  padding-top: 10px;
   margin-top: 0;
   margin-left: 0;
   border: 0;
@@ -71,7 +75,7 @@ body {
   padding: 5px;
 }
 
-#source {
+.source {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -81,6 +85,13 @@ body {
   margin-top: 20px;
   /* margin-bottom: 10px; */
   margin: none;
+}
+
+.first-arrangement {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
 }
 
 #source-name {
@@ -216,26 +227,137 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-#type-section {
-  border-radius: 30px;
-  border: 0;
-  padding: 17px 50px;
+.type {
+  border: 0px;
   align-self: center;
-  margin-top: 10px;
+  color: hsl(206, 6%, 79%);
 }
 
-#message-body {
+.type-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  border: 0;
+  padding: 5px;
   align-self: center;
-  width: 18rem;
-  height: 38rem;
+  margin-top: 20px;
+}
+
+#send-icon {
+  fill: hsl(0, 0%, 100%);
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100vmax;
+  padding: 4px 2px 4px 4px;
+  border: 0;
+}
+
+.message-body {
+  align-self: center;
   border-radius: 35px;
   border: 0.9rem solid hsl(0, 0%, 100%);
   background-color: hsl(270, 20%, 96%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-  /* transform: scale(0.5); */
+  /* transform: scale(0.7); */
 }
 
 #inner-message-body {
   padding: 0.5rem;
+}
+
+.message-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 19rem;
+  height: 39rem;
+  transform: scale(0.7);
+}
+
+.message-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -20rem 15rem -5rem -40rem;
+  border-bottom-left-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: block;
+}
+
+.title {
+  z-index: 1;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  background: hsl(290, 43%, 95%);
+  z-index: -1;
+  display: block;
+  inset: 10rem 0rem -40rem 60rem;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+}
+
+@media (max-width: 50em) {
+  #whole-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .title h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .title p {
+    align-self: center;
+    max-width: 30ch;
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .message-wrapper {
+    width: 19rem;
+    height: 40rem;
+    transform: scale(0.7);
+  }
+
+  .message-wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -20rem 10rem -5rem -70rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 30rem;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: block;
+  }
+
+  .title::after {
+    content: "";
+    position: absolute;
+    background: hsl(290, 43%, 95%);
+    z-index: -1;
+    display: block;
+    inset: 30rem -10rem -40rem 20rem;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+  }
 }

@@ -10,96 +10,144 @@
   </head>
   <body>
     <div id="whole-body">
-      <div id="title">
+      <div class="title">
         <h1>Simple booking</h1>
         <p>
           Stay in touch with our dog walkers through the chat interface. This
-          makes it easy to discuss arrangements and easy booking. once your
+          makes it easy to discuss arrangements and make bookings. Once your
           walking has been completed you can rate your walker and book again
           through the chat
         </p>
       </div>
 
-      <div id="message-body">
-        <div id="top-app">
-          <input id="first" type="text" />
-          <div id="source">
-            <img id="image-1" src="images/avatar.jpg" alt="Samuel's image" />
+      <div class="message-wrapper">
+        <div class="message-body">
+          <div id="top-app">
+            <input id="first" type="text" />
 
-            <div id="source-name">
-              <h2>Samuel Green</h2>
-              <p>Available to walk</p>
-            </div>
-          </div>
-        </div>
+            <div class="first-arrangement">
+              <div class="source">
+                <svg
+                  id="back-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  width="48"
+                >
+                  <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z" />
+                </svg>
 
-        <div id="inner-message-body">
-          <div class="sender">
-            <div class="message-1">
-              <p>That sounds great. I'd be happy with that.</p>
-            </div>
+                <img
+                  id="image-1"
+                  src="images/avatar.jpg"
+                  alt="Samuel's image"
+                />
 
-            <div class="message-1">
-              <p>Could you send over some pictures of your dog, please?</p>
-            </div>
-          </div>
-
-          <div class="receiver">
-            <div id="main-image-div">
-              <img
-                class="dog-image"
-                src="images/dog-image-1.jpg"
-                alt="Image 1"
-              />
-              <img
-                class="dog-image"
-                src="images/dog-image-2.jpg"
-                alt="Image 1"
-              />
-              <img
-                class="dog-image"
-                src="images/dog-image-3.jpg"
-                alt="Image 1"
-              />
-            </div>
-
-            <div class="message-2">
-              <p>Here are a few pictures. Shes a happy girl!</p>
-            </div>
-
-            <div class="message-2">
-              <p>Can you make it?</p>
-            </div>
-          </div>
-
-          <div class="sender">
-            <div class="message-1">
-              <p>
-                She looks so happy! The time we discussed works. How long shall
-                I take her out for?
-              </p>
-            </div>
-
-            <div id="walk-time">
-              <div id="style-time">
-                <div class="select-button">
-                  <div class="empty-div"></div>
-                  <p>30 minute walk</p>
+                <div id="source-name">
+                  <h2>Samuel Green</h2>
+                  <p>Available to walk</p>
                 </div>
-                <h1>$29</h1>
               </div>
-
-              <div id="style-time">
-                <div class="select-button">
-                  <div class="empty-div"></div>
-                  <p>1 hour walk</p>
-                </div>
-                <h1>$49</h1>
+              <div id="more">
+                <svg
+                  id="more-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  width="48"
+                >
+                  <path
+                    d="M24 40q-1 0-1.7-.7t-.7-1.7q0-1 .7-1.7t1.7-.7q1 0 1.7.7t.7 1.7q0 1-.7 1.7T24 40Zm0-13.6q-1 0-1.7-.7t-.7-1.7q0-1 .7-1.7t1.7-.7q1 0 1.7.7t.7 1.7q0 1-.7 1.7t-1.7.7Zm0-13.6q-1 0-1.7-.7t-.7-1.7q0-1 .7-1.7T24 8q1 0 1.7.7t.7 1.7q0 1-.7 1.7t-1.7.7Z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
 
-          <input id="type-section" type="type a message" />
+          <div id="inner-message-body">
+            <div class="sender">
+              <div class="message-1">
+                <p>That sounds great. I'd be happy with that.</p>
+              </div>
+
+              <div class="message-1">
+                <p>Could you send over some pictures of your dog, please?</p>
+              </div>
+            </div>
+
+            <div class="receiver">
+              <div id="main-image-div">
+                <img
+                  class="dog-image"
+                  src="images/dog-image-1.jpg"
+                  alt="Image 1"
+                />
+                <img
+                  class="dog-image"
+                  src="images/dog-image-2.jpg"
+                  alt="Image 1"
+                />
+                <img
+                  class="dog-image"
+                  src="images/dog-image-3.jpg"
+                  alt="Image 1"
+                />
+              </div>
+
+              <div class="message-2">
+                <p>Here are a few pictures. Shes a happy girl!</p>
+              </div>
+
+              <div class="message-2">
+                <p>Can you make it?</p>
+              </div>
+            </div>
+
+            <div class="sender">
+              <div class="message-1">
+                <p>
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </p>
+              </div>
+
+              <div id="walk-time">
+                <div id="style-time">
+                  <div class="select-button">
+                    <div class="empty-div"></div>
+                    <p>30 minute walk</p>
+                  </div>
+                  <h1>$29</h1>
+                </div>
+
+                <div id="style-time">
+                  <div class="select-button">
+                    <div class="empty-div"></div>
+                    <p>1 hour walk</p>
+                  </div>
+                  <h1>$49</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="type-section">
+              <div class="type">
+                <input
+                  class="type"
+                  type="text"
+                  placeholder="Type a message..."
+                />
+              </div>
+              <div id="submit-icon">
+                <svg
+                  id="send-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  width="20"
+                >
+                  <path d="m6 18-1.417-1.417L11.167 10 4.583 3.417 6 2l8 8Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
